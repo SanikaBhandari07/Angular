@@ -1,8 +1,5 @@
+<button (click)="toggleVisibility()">Toggle Component Visibility</button>
 
-<div>
-  <h1>{{ message }}</h1>
-  <button (click)="toggleVisibility()">Toggle Component Visibility</button>
-  <div *ngIf="isVisible">
-    <app-root></app-root>  
-  </div>
+<div *ngIf="isVisible">
+  <p>{{ message }}</p>
 </div>
